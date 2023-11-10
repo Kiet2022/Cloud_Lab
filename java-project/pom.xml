@@ -1,68 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
 
-  <groupId>eiu.cit</groupId>
-  <artifactId>java-project</artifactId>
-  <version>lab1</version>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 
-  <name>java-project</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-<properties>
+	<modelVersion>4.0.0</modelVersion>
 
+	<groupId>com.mkyong.hashing</groupId>
 
-<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<artifactId>JAVA-PROJECT</artifactId>
 
+	<packaging>jar</packaging>
 
-<maven.compiler.source>1.8</maven.compiler.source>
+	<version>lab1</version>
 
 
-<maven.compiler.target>1.8</maven.compiler.target>
+
+	<name>java-project</name>
+
+	<!-- FIXME change it to the project's website -->
+
+	<url>http://www.example.com</url>
 
 
-</properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.20</version>
-            <scope>runtime</scope>
-        </dependency>
+	<properties>
 
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-  </dependencies>
+		<maven.compiler.source>1.8</maven.compiler.source>
 
+		<maven.compiler.target>1.8</maven.compiler.target>
 
-    <build>
-      <pluginManagement>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-shade-plugin</artifactId>
-            <version>3.2.0</version>
-            <executions>
-            <execution>
-                  <phase>package</phase>
-                  <goals>
-                  <goal>shade</goal>
-                  </goals>
-            </execution>
-            </executions>
-        </plugin>
-        </plugins>
-      </pluginManagement>
-    </build>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+
+			<groupId>junit</groupId>
+
+			<artifactId>junit</artifactId>
+
+			<version>3.8.1</version>
+
+			<scope>test</scope>
+
+		</dependency>
+
+		<dependency>
+
+			<groupId>mysql</groupId>
+
+			<artifactId>mysql-connector-java</artifactId>
+
+			<version>8.0.20</version>
+
+			<scope>runtime</scope>
+
+		</dependency>
+
+	</dependencies>
+
+	<build>
+
+		<plugins>
+
+			<plugin>
+
+				<groupId>org.apache.maven.plugins</groupId>
+
+				<artifactId>maven-shade-plugin</artifactId>
+
+				<version>3.2.0</version>
+
+				<executions>
+
+					<execution>
+
+						<phase>package</phase>
+
+						<goals>
+
+							<goal>shade</goal>
+
+						</goals>
+
+					</execution>
+
+				</executions>
+
+			</plugin>
+
+		</plugins>
+
+	</build>
 
 </project>
